@@ -30,11 +30,6 @@ yo --generators
  * Yeoman can be too opinionated at times but is easily convinced not to be.
  * Feel free to [learn more about Yeoman](http://yeoman.io/).
 
-## Generator for
-
-[Generator AngularJS Web Application](https://github.com/yadickson/generator-ajsweb)
-[Generator AngularJS Library](https://github.com/yadickson/generator-ajslib)
-
 ## Generators
 
 Available generators:
@@ -129,6 +124,12 @@ Example:
 yo ajsbase:component --help
 yo ajsbase:component component-name
 ```
+
+## References
+
+[Generator AngularJS Web Application](https://github.com/yadickson/generator-ajsweb)
+
+[Generator AngularJS Library](https://github.com/yadickson/generator-ajslib)
 
 ## License
 
