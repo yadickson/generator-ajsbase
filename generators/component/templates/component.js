@@ -9,7 +9,7 @@
      * Description of the component <%= varname %>
      *
      * @example
-       <example module="sampleModule">
+       <example module="<%= projectModule %>">
            <file name="index.html">
               <div data-ng-controller='SampleCtrl'>
                 <input type='text' data-ng-model="outside" />
@@ -18,7 +18,7 @@
            </file>
            <file name="script.js">
                angular
-                   .module('sampleModule', ['<%= projectModule %>'])
+                   .module('<%= projectModule %>', [])
                    .controller('SampleCtrl', function () {
                         this.value = 'value';
                    });
