@@ -11,14 +11,13 @@
      * Description of the directive <%= varname %>
      * 
      * @example
-       <example module="sampleModule">
+       <example module="<%= projectModule %>">
            <file name="index.html">
+               AngularJS directive sample
                <<%= htmlname %>></<%= htmlname %>>
            </file>
            <file name="script.js">
-               angular
-                   .module('sampleModule', ['<%= projectModule %>'])
-                   .controller('SampleCtrl', function () {});
+               angular.module('<%= projectModule %>', []);
            </file>
        </example>
      */
@@ -32,7 +31,7 @@
                 link: function postLink(scope, element, attrs) {
                     element.text('this is the <%= varname %> directive');
                 }
-            }
+            };
         });
 
 })();
