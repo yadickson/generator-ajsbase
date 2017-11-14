@@ -4,7 +4,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const camelize = require('camelize');
 const decamelize = require('decamelize');
-const pkg = require('package-json-io');
+const pkg = require('../../utils');
 
 module.exports = class extends Generator {
 
@@ -35,8 +35,7 @@ module.exports = class extends Generator {
             desc: 'Disable yosay console (default: false)'
         });
 
-        this.module = pkg.name || 'app';
-        this.modulename = decamelize(camelize(this.module)) + 'Module';
+        this.modulename = pkg.getName();
         this.filepath = this.options.filepath;
         this.testpath = this.options.testpath;
         this.folder = '/directives/';
