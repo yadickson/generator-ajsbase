@@ -11,6 +11,10 @@ describe('generator-ajsbase:constant', () => {
                 .on('end', done);
         });
 
+        it('should constant file contain modulename', () => {
+            assert.fileContent('services/url_app_const.js', ".module('appModule')");
+        });
+
         it('should constant file contain name', () => {
             assert.fileContent('services/url_app_const.js', ".constant('urlApp',");
         });

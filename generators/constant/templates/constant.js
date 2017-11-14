@@ -3,13 +3,13 @@
 
     /**
      * @ngdoc service
-     * @name <%= projectModule %>.constant:<%= varname %>
+     * @name <%= modulename %>.constant:<%= varname %>
      *
      * @description
      * Description of the constant <%= varname %>
      *
      * @example
-       <example module="sampleModule">
+       <example module="<%= modulename %>">
            <file name="index.html">
               <div data-ng-controller='SampleCtrl'>
                 {{value}}
@@ -17,7 +17,7 @@
            </file>
            <file name="script.js">
                angular
-                   .module('sampleModule', ['<%= projectModule %>'])
+                   .module('<%= modulename %>', [])
                    .controller('SampleCtrl', [''<%= varname %>], function (<%= varname %>) {
                         this.value = 'Hello constant ' + <%= varname %>;
                    }]);
@@ -25,7 +25,7 @@
        </example>
      */
     angular
-        .module('<%= projectModule %>')
+        .module('<%= modulename %>')
         .constant('<%= varname %>', '<%= name %>');
 
 })();
