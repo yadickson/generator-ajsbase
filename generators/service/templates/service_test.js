@@ -5,7 +5,7 @@
           describe('Test module and service', function() {
 
               // load the module
-              beforeEach(angular.mock.module('<%= projectModule %>'));
+              beforeEach(angular.mock.module('<%= modulename %>'));
 
               var <%= name %>;
               // Initialize the service

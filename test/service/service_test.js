@@ -11,6 +11,10 @@ describe('generator-ajsbase:service', () => {
                 .on('end', done);
         });
 
+        it('should service file contain modulename', () => {
+            assert.fileContent('services/numeric_service.js', ".module('appModule')");
+        });
+
         it('should service file contain name', () => {
             assert.fileContent('services/numeric_service.js', ".service('numeric',");
         });
