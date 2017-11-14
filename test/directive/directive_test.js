@@ -11,6 +11,10 @@ describe('generator-ajsbase:directive', () => {
                 .on('end', done);
         });
 
+        it('should directive file contain modulename', () => {
+            assert.fileContent('directives/numeric_directive.js', ".module('appModule')");
+        });
+
         it('should directive file contain name', () => {
             assert.fileContent('directives/numeric_directive.js', ".directive('numeric',");
         });

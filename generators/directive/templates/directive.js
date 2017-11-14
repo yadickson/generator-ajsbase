@@ -3,7 +3,7 @@
 
     /**
      * @ngdoc directive
-     * @name <%= projectModule %>.directive:<%= varname %>
+     * @name <%= modulename %>.directive:<%= varname %>
      * @scope
      * @restrict E
      *
@@ -11,18 +11,18 @@
      * Description of the directive <%= varname %>
      * 
      * @example
-       <example module="<%= projectModule %>">
+       <example module="<%= modulename %>">
            <file name="index.html">
                AngularJS directive sample
                <<%= htmlname %>></<%= htmlname %>>
            </file>
            <file name="script.js">
-               angular.module('<%= projectModule %>', []);
+               angular.module('<%= modulename %>', []);
            </file>
        </example>
      */
     angular
-        .module('<%= projectModule %>')
+        .module('<%= modulename %>')
         .directive('<%= varname %>', function() {
 
             return {
