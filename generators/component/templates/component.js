@@ -3,13 +3,13 @@
 
     /**
      * @ngdoc component
-     * @name <%= projectModule %>.component:<%= varname %>
+     * @name <%= modulename %>.component:<%= varname %>
      *
      * @description
      * Description of the component <%= varname %>
      *
      * @example
-       <example module="<%= projectModule %>">
+       <example module="<%= modulename %>">
            <file name="index.html">
               <div data-ng-controller='SampleCtrl'>
                 <input type='text' data-ng-model="outside" />
@@ -18,7 +18,7 @@
            </file>
            <file name="script.js">
                angular
-                   .module('<%= projectModule %>', [])
+                   .module('<%= modulename %>', [])
                    .controller('SampleCtrl', function () {
                         this.value = 'value';
                    });
@@ -26,7 +26,7 @@
        </example>
      */
     angular
-        .module('<%= projectModule %>')
+        .module('<%= modulename %>')
         .component('<%= varname %>', {
             bindings: {
                 myBinding: '@'

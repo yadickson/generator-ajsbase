@@ -11,6 +11,10 @@ describe('generator-ajsbase:component', () => {
                 .on('end', done);
         });
 
+        it('should component file contain modulename', () => {
+            assert.fileContent('components/numeric_component.js', ".module('appModule')");
+        });
+
         it('should component file contain name', () => {
             assert.fileContent('components/numeric_component.js', ".component('numeric',");
         });

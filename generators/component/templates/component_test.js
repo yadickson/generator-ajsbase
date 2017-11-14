@@ -5,7 +5,7 @@
         describe('Test module and component', function() {
 
             // load the module
-            beforeEach(angular.mock.module('<%= projectModule %>'));
+            beforeEach(angular.mock.module('<%= modulename %>'));
 
             var controller;
             var scope;
@@ -28,7 +28,7 @@
 
         describe('Test rendered <%= varname %> component', function () {
             // load the module
-            beforeEach(angular.mock.module('<%= projectModule %>'));
+            beforeEach(angular.mock.module('<%= modulename %>'));
  
             var element;
             var scope;
