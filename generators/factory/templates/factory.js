@@ -3,12 +3,12 @@
 
     /**
      * @ngdoc service
-     * @name <%= projectModule %>.factory:<%= varname %>
+     * @name <%= modulename %>.factory:<%= varname %>
      *
      * @description
      * Description of the factory <%= varname %>
      * @example
-       <example module="sampleModule">
+       <example module="<%= modulename %>">
            <file name="index.html">
               <div data-ng-controller='SampleCtrl'>
                 {{value}}
@@ -16,7 +16,7 @@
            </file>
            <file name="script.js">
                angular
-                   .module('sampleModule', ['<%= projectModule %>'])
+                   .module('<%= modulename %>', [])
                    .controller('SampleCtrl', [''<%= varname %>], function (<%= varname %>) {
                         this.value = 'Hello factory ' + <%= varname %>.someMethod();
                    }]);
@@ -24,7 +24,7 @@
        </example>
      */
     angular
-        .module('<%= projectModule %>')
+        .module('<%= modulename %>')
         .factory('<%= varname %>', function() {
             // Service logic
             // ...

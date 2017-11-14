@@ -7,8 +7,12 @@ describe('generator-ajsbase:factory', () => {
     describe('Create template files', () => {
         before(done => {
             helpers.run(path.join(__dirname, '../../generators/factory'))
-                .withArguments(['numeric', 'src', 'test'])
+                .withArguments(['numeric', 'factoryModule', 'src', 'test'])
                 .on('end', done);
+        });
+
+        it('should factory file contain modulename', () => {
+            assert.fileContent('src/services/numeric_factory.js', ".module('factoryModule')");
         });
 
         it('creates src/services/numeric_factory.js', () => {

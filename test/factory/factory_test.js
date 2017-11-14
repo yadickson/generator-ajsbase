@@ -11,6 +11,10 @@ describe('generator-ajsbase:factory', () => {
                 .on('end', done);
         });
 
+        it('should factory file contain modulename', () => {
+            assert.fileContent('services/numeric_factory.js', ".module('appModule')");
+        });
+
         it('should factory file contain name', () => {
             assert.fileContent('services/numeric_factory.js', ".factory('numeric',");
         });
