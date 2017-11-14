@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const yosay = require('yosay');
 const camelize = require('camelize');
 const decamelize = require('decamelize');
+const utils = require('../../utils');
 
 module.exports = class extends Generator {
 
@@ -14,13 +15,6 @@ module.exports = class extends Generator {
             type: String,
             required: true,
             desc: '[Provider name]'
-        });
-
-        this.argument('modulename', {
-            type: String,
-            required: false,
-            default: 'appModule',
-            desc: '[Module name]'
         });
 
         this.argument('filepath', {
@@ -41,7 +35,7 @@ module.exports = class extends Generator {
             desc: 'Disable yosay console (default: false)'
         });
 
-        this.modulename = this.options.modulename;
+        this.modulename = utils.getName();
         this.filepath = this.options.filepath;
         this.testpath = this.options.testpath;
         this.folder = '/services/';

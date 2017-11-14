@@ -14,10 +14,6 @@ describe('generator-ajsbase:value', () => {
                 .on('end', done);
         });
 
-        it('should value file contain modulename', () => {
-            assert.fileContent('services/excel_value.js', ".module('appModule')");
-        });
-
         it('should value file contain name', () => {
             assert.fileContent('services/excel_value.js', ".value('excel',");
         });

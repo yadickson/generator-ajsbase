@@ -7,12 +7,8 @@ describe('generator-ajsbase:constant', () => {
     describe('Create template files', () => {
         before(done => {
             helpers.run(path.join(__dirname, '../../generators/constant'))
-                .withArguments(['numeric', 'constantModule', 'src', 'test'])
+                .withArguments(['numeric', 'src', 'test'])
                 .on('end', done);
-        });
-
-        it('should constant file contain modulename', () => {
-            assert.fileContent('src/services/numeric_const.js', ".module('constantModule')");
         });
 
         it('creates src/services/numeric_const.js', () => {

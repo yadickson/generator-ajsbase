@@ -11,6 +11,10 @@ describe('generator-ajsweb:value', () => {
                 .on('end', done);
         });
 
+        it('should value file contain modulename', () => {
+            assert.fileContent('services/numeric_value.js', ".module('appModule')");
+        });
+
         it('should value file contain name', () => {
             assert.fileContent('services/numeric_value.js', ".value('numeric',");
         });

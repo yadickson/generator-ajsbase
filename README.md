@@ -52,7 +52,7 @@ Generates a test controller in `./[test-destdir]/controllers`.
 Example:
 ```bash
 yo ajsbase:controller --help
-yo ajsbase:controller controller-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:controller controller-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Directive
@@ -62,7 +62,7 @@ Generates a test directive in `./[test-destdir]/directives`.
 Example:
 ```bash
 yo ajsbase:directive --help
-yo ajsbase:directive directive-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:directive directive-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Filter
@@ -72,7 +72,7 @@ Generates a test filter in `./[test-destdir]/filters`.
 Example:
 ```bash
 yo ajsbase:filter --help
-yo ajsbase:filter filter-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:filter filter-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Service
@@ -82,7 +82,7 @@ Generates a test service in `./[test-destdir]/services`.
 Example:
 ```bash
 yo ajsbase:service --help
-yo ajsbase:service service-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:service service-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Provider
@@ -92,7 +92,7 @@ Generates a test service in `./[test-destdir]/services`.
 Example:
 ```bash
 yo ajsbase:provider --help
-yo ajsbase:provider provider-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:provider provider-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Factory
@@ -102,7 +102,7 @@ Generates a test service in `./[test-destdir]/services`.
 Example:
 ```bash
 yo ajsbase:factory --help
-yo ajsbase:factory factory-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:factory factory-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Value
@@ -112,7 +112,7 @@ Generates a test service in `./[test-destdir]/services`.
 Example:
 ```bash
 yo ajsbase:value --help
-yo ajsbase:value value-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:value value-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Constant
@@ -122,7 +122,7 @@ Generates a test service in `./[test-destdir]/services`.
 Example:
 ```bash
 yo ajsbase:constant --help
-yo ajsbase:constant constant-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:constant constant-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Decorator
@@ -132,7 +132,7 @@ Generates a test service decorator in `./[test-destdir]/decorators`.
 Example:
 ```bash
 yo ajsbase:decorator --help
-yo ajsbase:decorator service-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:decorator service-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Component
@@ -142,7 +142,7 @@ Generates a test component in `./[test-destdir]/components`.
 Example:
 ```bash
 yo ajsbase:component --help
-yo ajsbase:component component-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+yo ajsbase:component component-name [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ## References

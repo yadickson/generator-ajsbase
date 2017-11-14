@@ -7,12 +7,8 @@ describe('generator-ajsbase:service', () => {
     describe('Create template files', () => {
         before(done => {
             helpers.run(path.join(__dirname, '../../generators/service'))
-                .withArguments(['numeric', 'serviceModule', 'src', 'test'])
+                .withArguments(['numeric', 'src', 'test'])
                 .on('end', done);
-        });
-
-        it('should service file contain modulename', () => {
-            assert.fileContent('src/services/numeric_service.js', ".module('serviceModule')");
         });
 
         it('creates src/services/numeric_service.js', () => {

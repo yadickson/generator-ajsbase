@@ -7,12 +7,8 @@ describe('generator-ajsbase:component', () => {
     describe('Create template files', () => {
         before(done => {
             helpers.run(path.join(__dirname, '../../generators/component'))
-                .withArguments(['numeric', 'componentModule', 'src', 'test'])
+                .withArguments(['numeric', 'src', 'test'])
                 .on('end', done);
-        });
-
-        it('should component file contain modulename', () => {
-            assert.fileContent('src/components/numeric_component.js', ".module('componentModule')");
         });
 
         it('creates src/components/numeric_component.js', () => {

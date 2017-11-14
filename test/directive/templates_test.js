@@ -7,12 +7,8 @@ describe('generator-ajsbase:directive', () => {
     describe('Create template files', () => {
         before(done => {
             helpers.run(path.join(__dirname, '../../generators/directive'))
-                .withArguments(['numeric', 'directiveModule', 'src', 'test'])
+                .withArguments(['numeric', 'src', 'test'])
                 .on('end', done);
-        });
-
-        it('should directive file contain modulename', () => {
-            assert.fileContent('src/directives/numeric_directive.js', ".module('directiveModule')");
         });
 
         it('creates src/directives/numeric_directive.js', () => {
