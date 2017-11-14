@@ -5,7 +5,7 @@ const yosay = require('yosay');
 const uppercamelcase = require('uppercamelcase');
 const camelize = require('camelize');
 const decamelize = require('decamelize');
-const pkg = require('../../utils');
+const pkg = require('package-json-utils');
 
 module.exports = class extends Generator {
 
@@ -36,7 +36,7 @@ module.exports = class extends Generator {
             desc: 'Disable yosay console (default: false)'
         });
 
-        this.modulename = pkg.getName();
+        this.modulename = pkg.getModuleName();
         this.filepath = this.options.filepath;
         this.testpath = this.options.testpath;
         this.folder = '/controllers/';
