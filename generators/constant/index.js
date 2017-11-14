@@ -5,7 +5,7 @@ const yosay = require('yosay');
 const camelize = require('camelize');
 const decamelize = require('decamelize');
 const upperCase = require('upper-case')
-const utils = require('../../utils');
+const pkg = require('package-json-io');
 
 module.exports = class extends Generator {
 
@@ -36,7 +36,8 @@ module.exports = class extends Generator {
             desc: 'Disable yosay console (default: false)'
         });
 
-        this.modulename = utils.getName();
+        this.module = pkg.name || 'app';
+        this.modulename = decamelize(camelize(this.module)) + 'Module';
         this.filepath = this.options.filepath;
         this.testpath = this.options.testpath;
         this.folder = '/services/';
