@@ -34,6 +34,7 @@ yo --generators
 
 Available generators:
 
+* [ajsbase:controller](#controller)
 * [ajsbase:directive](#directive)
 * [ajsbase:filter](#filter)
 * [ajsbase:service](#service)
@@ -44,85 +45,104 @@ Available generators:
 * [ajsbase:decorator](#decorator)
 * [ajsbase:component](#component)
 
+### Controller
+Generates a controller in `./[src-destdir]/controllers`.
+Generates a test controller in `./[test-destdir]/controllers`.
+
+Example:
+```bash
+yo ajsbase:controller --help
+yo ajsbase:controller controller-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
+```
+
 ### Directive
-Generates a directive in `./directives`.
+Generates a directive in `./[src-destdir]/directives`.
+Generates a test directive in `./[test-destdir]/directives`.
 
 Example:
 ```bash
 yo ajsbase:directive --help
-yo ajsbase:directive directive-name
+yo ajsbase:directive directive-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Filter
-Generates a filter in `./filters`.
+Generates a filter in `./[src-destdir]/filters`.
+Generates a test filter in `./[test-destdir]/filters`.
 
 Example:
 ```bash
 yo ajsbase:filter --help
-yo ajsbase:filter filter-name
+yo ajsbase:filter filter-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Service
-Generates an AngularJS service in `./services`.
+Generates an AngularJS service in `./[src-destdir]/services`.
+Generates a test service in `./[test-destdir]/services`.
 
 Example:
 ```bash
 yo ajsbase:service --help
-yo ajsbase:service service-name
+yo ajsbase:service service-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Provider
-Generates an AngularJS provider in `./services`.
+Generates an AngularJS provider in `./[src-destdir]/services`.
+Generates a test service in `./[test-destdir]/services`.
 
 Example:
 ```bash
 yo ajsbase:provider --help
-yo ajsbase:provider provider-name
+yo ajsbase:provider provider-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Factory
-Generates an AngularJS factory in `./services`.
+Generates an AngularJS factory in `./[src-destdir]/services`.
+Generates a test service in `./[test-destdir]/services`.
 
 Example:
 ```bash
 yo ajsbase:factory --help
-yo ajsbase:factory factory-name
+yo ajsbase:factory factory-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Value
-Generates an AngularJS value in `./services`.
+Generates an AngularJS value in `./[src-destdir]/services`.
+Generates a test service in `./[test-destdir]/services`.
 
 Example:
 ```bash
 yo ajsbase:value --help
-yo ajsbase:value value-name
+yo ajsbase:value value-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Constant
-Generates an AngularJS constant in `./services`.
+Generates an AngularJS constant in `./[src-destdir]/services`.
+Generates a test service in `./[test-destdir]/services`.
 
 Example:
 ```bash
 yo ajsbase:constant --help
-yo ajsbase:constant constant-name
+yo ajsbase:constant constant-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Decorator
-Generates an AngularJS service decorator in `./decorators`.
+Generates an AngularJS service decorator in `./[src-destdir]/decorators`.
+Generates a test service decorator in `./[test-destdir]/decorators`.
 
 Example:
 ```bash
 yo ajsbase:decorator --help
-yo ajsbase:decorator service-name
+yo ajsbase:decorator service-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ### Component
-Generates an AngularJS component in `./components`.
+Generates an AngularJS component in `./[src-destdir]/components`.
+Generates a test component in `./[test-destdir]/components`.
 
 Example:
 ```bash
 yo ajsbase:component --help
-yo ajsbase:component component-name
+yo ajsbase:component component-name [module-name: default 'appModule'] [src-destdir: default '.'] [test-destdir: default 'test/spec']
 ```
 
 ## References
