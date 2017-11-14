@@ -3,7 +3,7 @@
 
     /**
      * @ngdoc function
-     * @name <%= projectModule %>.decorator:<%= varname %>
+     * @name <%= modulename %>.decorator:<%= varname %>
      *
      * @requires <%= varname %>
      *
@@ -11,7 +11,7 @@
      * Description of the decorator to <%= varname %>
      */
     angular
-        .module('<%= projectModule %>')
+        .module('<%= modulename %>')
         .config(['$provide', function($provide) {
             $provide.decorator('<%= varname %>', ['$delegate', function($delegate) {
                 // decorate the $delegate

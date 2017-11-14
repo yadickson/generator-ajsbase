@@ -16,6 +16,13 @@ module.exports = class extends Generator {
             desc: '[Decorator name]'
         });
 
+        this.argument('modulename', {
+            type: String,
+            required: false,
+            default: 'appModule',
+            desc: '[Module name]'
+        });
+
         this.argument('filepath', {
             type: String,
             required: false,
@@ -34,6 +41,7 @@ module.exports = class extends Generator {
             desc: 'Disable yosay console (default: false)'
         });
 
+        this.modulename = this.options.modulename;
         this.filepath = this.options.filepath;
         this.testpath = this.options.testpath;
         this.folder = '/decorators/';
@@ -45,9 +53,6 @@ module.exports = class extends Generator {
         this.decoratorname = this.varname + 'Decorator';
         this.file = decamelize(camelize(this.decoratorname)) + '.js';
         this.filetest = decamelize(camelize(this.decoratorname)) + '_test.js';
-
-        this.projectModule = this.config.get('projectModule');
-        this.license = this.config.get('license');
     }
 
     prompting() {
@@ -66,8 +71,7 @@ module.exports = class extends Generator {
             this.destinationPath(this.filepath + this.folder + this.file), {
                 varname: this.varname,
                 name: this.decoratorname,
-                projectModule: this.projectModule,
-                license: this.license
+                modulename: this.modulename
             }
         );
     }
@@ -78,8 +82,7 @@ module.exports = class extends Generator {
             this.destinationPath(this.testpath + this.folder + this.filetest), {
                 varname: this.varname,
                 name: this.decoratorname,
-                projectModule: this.projectModule,
-                license: this.license
+                modulename: this.modulename
             }
         );
     }
