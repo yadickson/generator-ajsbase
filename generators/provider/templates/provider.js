@@ -3,13 +3,13 @@
 
     /**
      * @ngdoc service
-     * @name <%= projectModule %>.provider:<%= varname %>
+     * @name <%= modulename %>.provider:<%= varname %>
      *
      * @description
      * Description of the provider <%= varname %>
      */
     angular
-        .module('<%= projectModule %>')
+        .module('<%= modulename %>')
         .provider('<%= varname %>', function() {
 
             // Private variables

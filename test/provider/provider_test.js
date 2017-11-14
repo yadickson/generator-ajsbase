@@ -11,6 +11,10 @@ describe('generator-ajsbase:provider', () => {
                 .on('end', done);
         });
 
+        it('should provider file contain modulename', () => {
+            assert.fileContent('services/numeric_provider.js', ".module('appModule')");
+        });
+
         it('should provider file contain name', () => {
             assert.fileContent('services/numeric_provider.js', ".provider('numeric',");
         });

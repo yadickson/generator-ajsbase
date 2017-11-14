@@ -13,7 +13,7 @@
                   };
 
               // load the module
-              beforeEach(angular.mock.module('<%= projectModule %>'));
+              beforeEach(angular.mock.module('<%= modulename %>'));
 
               it('Check provider <%= varname %>', function() {
                   initialize();
