@@ -3,19 +3,19 @@
 
     /**
      * @ngdoc filter
-     * @name <%= projectModule %>.filter:<%= varname %>
+     * @name <%= modulename %>.filter:<%= varname %>
      *
      * @description
      * Description of the filter <%= varname %>
      * 
      * @example
-       <example module="sampleModule">
+       <example module="<%= modulename %>">
            <file name="index.html">
                {{ value | <%= varname %>}}
            </file>
            <file name="script.js">
                angular
-                   .module('sampleModule', ['<%= projectModule %>'])
+                   .module('<%= modulename %>', [])
                    .controller('SampleCtrl', function () {
                         this.value = 'value';
                    });
@@ -23,7 +23,7 @@
        </example>
      */
     angular
-        .module('<%= projectModule %>')
+        .module('<%= modulename %>')
         .filter('<%= varname %>', function() {
             return function(input) {
                 return '<%= varname %> filter: ' + input;

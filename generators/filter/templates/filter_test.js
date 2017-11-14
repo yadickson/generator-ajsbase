@@ -5,7 +5,7 @@
           describe('Test module and filter', function() {
 
               // load the module
-              beforeEach(angular.mock.module('<%= projectModule %>'));
+              beforeEach(angular.mock.module('<%= modulename %>'));
 
               var <%= name %>;
               // initialize a new instance of the filter before each test

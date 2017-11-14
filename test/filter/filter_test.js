@@ -11,6 +11,10 @@ describe('generator-ajsbase:filter', () => {
                 .on('end', done);
         });
 
+        it('should filter file contain modulename', () => {
+            assert.fileContent('filters/numeric_filter.js', ".module('appModule')");
+        });
+
         it('should filter file contain name', () => {
             assert.fileContent('filters/numeric_filter.js', ".filter('numeric',");
         });
