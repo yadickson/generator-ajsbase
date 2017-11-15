@@ -35,7 +35,7 @@ module.exports = class extends Generator {
             desc: 'Disable yosay console (default: false)'
         });
 
-        this.modulename = pkg.getModuleName();
+        this.modulename = camelize(pkg.getProjectName() || 'app') + 'Module';
         this.filepath = this.options.filepath;
         this.testpath = this.options.testpath;
         this.folder = '/decorators/';
