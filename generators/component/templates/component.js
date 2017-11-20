@@ -12,7 +12,7 @@
        <example module="<%= modulename %>">
            <file name="index.html">
               <div data-ng-controller='SampleCtrl'>
-                <input type='text' data-ng-model="outside" />
+                <input type='text' data-ng-model="value" />
                 <<%= htmlname %> data-my-binding="{{value}}"></<%= htmlname %>>
               </div>
            </file>
