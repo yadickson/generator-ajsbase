@@ -11,9 +11,7 @@
      * @example
        <example module="<%= modulename %>">
            <file name="index.html">
-               <div data-ng-controller='SampleCtrl as sample'>
-                  {{ sample.value | <%= varname %> }}
-              </div>
+               <div data-ng-controller='SampleCtrl as sample'> {{ sample.value | <%= varname %> }} </div>
            </file>
            <file name="script.js">
                angular
