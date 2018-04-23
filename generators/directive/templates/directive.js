@@ -13,7 +13,6 @@
      * @example
        <example module="<%= modulename %>">
            <file name="index.html">
-               AngularJS directive sample
                <<%= htmlname %>></<%= htmlname %>>
            </file>
            <file name="script.js">
