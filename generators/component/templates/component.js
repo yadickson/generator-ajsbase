@@ -11,14 +11,14 @@
      * @example
        <example module="<%= modulename %>">
            <file name="index.html">
-              <div data-ng-controller='SampleCtrl'>
-                <input type='text' data-ng-model="value" />
-                <<%= htmlname %> data-my-binding="{{value}}"></<%= htmlname %>>
+              <div data-ng-controller='SampleCtrl as sample'>
+                <input type='text' data-ng-model="sample.value" />
+                <<%= htmlname %> data-my-binding="{{sample.value}}"></<%= htmlname %>>
               </div>
            </file>
            <file name="script.js">
                angular
-                   .module('<%= modulename %>', [])
+                   .module('<%= modulename %>')
                    .controller('SampleCtrl', [function () {
                         this.value = 'value';
                    }]);
@@ -32,9 +32,9 @@
                 myBinding: '@'
             },
             controller: function() {
-                this.myTitle = '<%= name %>';
+                this.myTitle = 'Hello component <%= varname %>';
             },
-            template: '<h1>{{ $ctrl.myTitle }} {{ $ctrl.myBinding }}</h1>'
+            template: '<h1>{{ $ctrl.myTitle }}: {{ $ctrl.myBinding }}</h1>'
         });
 
 })();

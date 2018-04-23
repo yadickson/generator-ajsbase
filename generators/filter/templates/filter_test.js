@@ -15,7 +15,7 @@
 
               it('should return the input prefixed with "<%= varname %> filter:"', inject(function() {
                   var text = 'Hello World';
-                  expect(<%= name %>(text)).to.be.equal('<%= varname %> filter: ' + text);
+                  expect(<%= name %>(text)).to.be.equal('Hello filter <%= varname %>: ' + text);
               }));
           });
       });

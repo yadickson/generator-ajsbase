@@ -11,11 +11,13 @@
      * @example
        <example module="<%= modulename %>">
            <file name="index.html">
-               {{ value | <%= varname %>}}
+               <div data-ng-controller='SampleCtrl as sample'>
+                  {{ sample.value | <%= varname %> }}
+              </div>
            </file>
            <file name="script.js">
                angular
-                   .module('<%= modulename %>', [])
+                   .module('<%= modulename %>')
                    .controller('SampleCtrl', [function () {
                         this.value = 'value';
                    }]);
@@ -26,7 +28,7 @@
         .module('<%= modulename %>')
         .filter('<%= varname %>', [function() {
             return function(input) {
-                return '<%= varname %> filter: ' + input;
+                return 'Hello filter <%= varname %>: ' + input;
             };
         }]);
 

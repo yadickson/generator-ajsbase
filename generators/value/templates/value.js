@@ -11,15 +11,15 @@
      * @example
        <example module="<%= modulename %>">
            <file name="index.html">
-              <div data-ng-controller='SampleCtrl'>
-                {{value}}
+              <div data-ng-controller='SampleCtrl as sample'>
+                {{sample.value}}
               </div>
            </file>
            <file name="script.js">
                angular
-                   .module('<%= modulename %>', [])
-                   .controller('SampleCtrl', ['<%= varname %>'], function (<%= varname %>) {
-                        this.value = 'Hello value ' + <%= varname %>;
+                   .module('<%= modulename %>')
+                   .controller('SampleCtrl', ['<%= varname %>', function (<%= varname %>) {
+                        this.value = 'Hello value <%= varname %>: ' + <%= varname %>;
                    }]);
            </file>
        </example>

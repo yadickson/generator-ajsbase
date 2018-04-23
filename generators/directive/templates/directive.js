@@ -17,7 +17,7 @@
                <<%= htmlname %>></<%= htmlname %>>
            </file>
            <file name="script.js">
-               angular.module('<%= modulename %>', []);
+               angular.module('<%= modulename %>');
            </file>
        </example>
      */
@@ -29,7 +29,7 @@
                 template: '<div></div>',
                 restrict: 'E',
                 link: function postLink(scope, element, attrs) {
-                    element.text('this is the <%= varname %> directive');
+                    element.text('Hello directive <%= varname %>');
                 }
             };
         }]);

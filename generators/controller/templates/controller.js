@@ -7,15 +7,21 @@
      *
      * @description
      * Description of the controller <%= varname %>
+     *
+     * @example
+        <example module="<%= modulename %>">
+            <file name="index.html">
+               <div data-ng-controller='<%= varname %> as sample'>
+                 {{sample.value}}
+               </div>
+            </file>
+        </example>
      */
+
     angular
         .module('<%= modulename %>')
         .controller('<%= varname %>', [function() {
-            this.awesomeThings = [
-                'HTML5 Boilerplate',
-                'AngularJS',
-                'Mocha'
-            ];
+            this.value = 'Hello controller <%= varname %>';
         }]);
 
 })();

@@ -17,7 +17,7 @@
               it('should make hidden element visible', inject(function($compile) {
                   element = angular.element('<<%= htmlname %>></<%= htmlname %>>');
                   element = $compile(element)(scope);
-                  expect(element.text()).to.be.equal('this is the <%= varname %> directive');
+                  expect(element.text()).to.be.equal('Hello directive <%= varname %>');
               }));
           });
       });

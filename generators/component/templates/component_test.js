@@ -17,9 +17,9 @@
 
             it('should expose my title', function() {
                 expect(!!controller.myTitle).to.be.true;
-                expect(controller.myTitle).to.be.equal('<%= name %>');
+                expect(controller.myTitle).to.be.equal('Hello component <%= varname %>: ');
             });
- 
+
             it('should have my binding bound', function() {
                 expect(!!controller.myBinding).to.be.true;
                 expect(controller.myBinding).to.be.equal('1.5');
@@ -29,7 +29,7 @@
         describe('Test rendered <%= varname %> component', function () {
             // load the module
             beforeEach(angular.mock.module('<%= modulename %>'));
- 
+
             var element;
             var scope;
             // Initialize the component
@@ -40,12 +40,12 @@
                 scope.outside = '1.5';
                 scope.$apply();
             }));
- 
+
             it('should render the text', function() {
                 var h1 = element.find('h1');
-                expect(h1.text()).to.be.equal('<%= name %> 1.5');
+                expect(h1.text()).to.be.equal('Hello component <%= varname %>: 1.5');
             });
- 
+
         });
     });
 })();

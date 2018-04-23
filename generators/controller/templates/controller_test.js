@@ -20,8 +20,7 @@
             }));
 
             it('should attach a list of awesomeThings to the scope', function() {
-                expect(controller.awesomeThings).to.be.an('array');
-                expect(controller.awesomeThings).to.have.lengthOf(3);
+                expect(controller.value).to.be.equal('Hello controller <%= varname %>');
             });
         });
     });
