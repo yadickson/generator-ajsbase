@@ -10,12 +10,12 @@
      */
     angular
         .module('<%= modulename %>')
-        .controller('<%= varname %>', function() {
+        .controller('<%= varname %>', [function() {
             this.awesomeThings = [
                 'HTML5 Boilerplate',
                 'AngularJS',
                 'Mocha'
             ];
-        });
+        }]);
 
 })();

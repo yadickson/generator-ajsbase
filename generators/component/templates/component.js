@@ -19,9 +19,9 @@
            <file name="script.js">
                angular
                    .module('<%= modulename %>', [])
-                   .controller('SampleCtrl', function () {
+                   .controller('SampleCtrl', [function () {
                         this.value = 'value';
-                   });
+                   }]);
            </file>
        </example>
      */

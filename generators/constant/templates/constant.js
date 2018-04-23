@@ -18,7 +18,7 @@
            <file name="script.js">
                angular
                    .module('<%= modulename %>', [])
-                   .controller('SampleCtrl', ['<%= varname %>'], function (<%= varname %>) {
+                   .controller('SampleCtrl', ['<%= varname %>', function (<%= varname %>) {
                         this.value = 'Hello constant ' + <%= varname %>;
                    }]);
            </file>

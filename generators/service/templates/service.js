@@ -18,7 +18,7 @@
            <file name="script.js">
                angular
                    .module('<%= modulename %>', [])
-                   .controller('SampleCtrl', ['<%= varname %>'], function (<%= varname %>) {
+                   .controller('SampleCtrl', ['<%= varname %>', function (<%= varname %>) {
                         this.value = 'Hello factory ' + <%= varname %>.name;
                    }]);
            </file>
@@ -26,9 +26,9 @@
      */
     angular
         .module('<%= modulename %>')
-        .service('<%= varname %>', function() {
+        .service('<%= varname %>', [function() {
             // AngularJS will instantiate a singleton by calling "new" on this function
             this.name = '<%= name %>';
-        });
+        }]);
 
 })();

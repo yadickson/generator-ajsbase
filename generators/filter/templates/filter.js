@@ -7,7 +7,7 @@
      *
      * @description
      * Description of the filter <%= varname %>
-     * 
+     *
      * @example
        <example module="<%= modulename %>">
            <file name="index.html">
@@ -16,18 +16,18 @@
            <file name="script.js">
                angular
                    .module('<%= modulename %>', [])
-                   .controller('SampleCtrl', function () {
+                   .controller('SampleCtrl', [function () {
                         this.value = 'value';
-                   });
+                   }]);
            </file>
        </example>
      */
     angular
         .module('<%= modulename %>')
-        .filter('<%= varname %>', function() {
+        .filter('<%= varname %>', [function() {
             return function(input) {
                 return '<%= varname %> filter: ' + input;
             };
-        });
+        }]);
 
 })();

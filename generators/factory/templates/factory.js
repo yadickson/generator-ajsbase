@@ -17,7 +17,7 @@
            <file name="script.js">
                angular
                    .module('<%= modulename %>', [])
-                   .controller('SampleCtrl', ['<%= varname %>'], function (<%= varname %>) {
+                   .controller('SampleCtrl', ['<%= varname %>', function (<%= varname %>) {
                         this.value = 'Hello factory ' + <%= varname %>.someMethod();
                    }]);
            </file>
@@ -25,7 +25,7 @@
      */
     angular
         .module('<%= modulename %>')
-        .factory('<%= varname %>', function() {
+        .factory('<%= varname %>', [function() {
             // Service logic
             // ...
 
@@ -37,6 +37,6 @@
                     return name;
                 }
             };
-        });
+        }]);
 
 })();

@@ -9,7 +9,7 @@
      *
      * @description
      * Description of the directive <%= varname %>
-     * 
+     *
      * @example
        <example module="<%= modulename %>">
            <file name="index.html">
@@ -23,7 +23,7 @@
      */
     angular
         .module('<%= modulename %>')
-        .directive('<%= varname %>', function() {
+        .directive('<%= varname %>', [function() {
 
             return {
                 template: '<div></div>',
@@ -32,6 +32,6 @@
                     element.text('this is the <%= varname %> directive');
                 }
             };
-        });
+        }]);
 
 })();

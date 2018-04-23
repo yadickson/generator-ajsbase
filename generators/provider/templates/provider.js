@@ -10,7 +10,7 @@
      */
     angular
         .module('<%= modulename %>')
-        .provider('<%= varname %>', function() {
+        .provider('<%= varname %>', [function() {
 
             // Private variables
             var name = '<%= name %>';
@@ -32,6 +32,6 @@
                 return new Constructor();
             };
 
-        });
+        }]);
 
 })();
