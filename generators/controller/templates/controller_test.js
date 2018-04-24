@@ -19,7 +19,7 @@
                 });
             }));
 
-            it('should attach a list of awesomeThings to the scope', function() {
+            it('should attach a value to the scope', function() {
                 expect(controller.value).to.be.equal('Hello controller <%= varname %>');
             });
         });
