@@ -21,7 +21,8 @@
     angular
         .module('<%= modulename %>')
         .controller('<%= varname %>', [function() {
-            this.value = 'Hello controller <%= varname %>';
+            var vm = this;
+            vm.value = 'Hello controller <%= varname %>';
         }]);
 
 })();

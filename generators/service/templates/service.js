@@ -28,7 +28,8 @@
         .module('<%= modulename %>')
         .service('<%= varname %>', [function() {
             // AngularJS will instantiate a singleton by calling "new" on this function
-            this.name = '<%= name %>';
+            var vm = this;
+            vm.name = '<%= name %>';
         }]);
 
 })();

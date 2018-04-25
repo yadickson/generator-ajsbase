@@ -1,6 +1,6 @@
 {
     "name": "generator-ajsbase",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "description": "Yeoman Gulp Generator Base for AngularJS",
     "homepage": "https://github.com/yadickson/generator-ajsbase",
     "author": {
