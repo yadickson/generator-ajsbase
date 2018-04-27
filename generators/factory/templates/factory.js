@@ -18,7 +18,8 @@
                angular
                    .module('<%= modulename %>')
                    .controller('SampleCtrl', ['<%= varname %>', function (<%= varname %>) {
-                        this.value = 'Hello factory ' + <%= varname %>.someMethod();
+                        var vm = this;
+                        vm.value = 'Hello factory ' + <%= varname %>.someMethod();
                    }]);
            </file>
        </example>
@@ -29,7 +30,8 @@
             // Service logic
             // ...
 
-            var name = '<%= name %>';
+            var vm = this;
+            vm.name = '<%= name %>';
 
             // Public API here
             return {
