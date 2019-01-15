@@ -1,6 +1,6 @@
 {
     "name": "generator-ajsbase",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "description": "Yeoman Gulp Generator Base for AngularJS",
     "homepage": "https://github.com/yadickson/generator-ajsbase",
     "author": {
@@ -50,5 +50,8 @@
         "coveralls": "./node_modules/.bin/nyc report --reporter=text-lcov | coveralls"
     },
     "repository": "https://github.com/yadickson/generator-ajsbase.git",
-    "license": "GPL-3.0"
+    "license": "GPL-3.0",
+    "publishConfig": {
+      "access": "public"
+    }
 }

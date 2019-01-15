@@ -1,4 +1,11 @@
 language: node_js
 node_js:
-  - stable
-after_success: 'npm run coveralls'
+- stable
+after_success: npm run coveralls
+deploy:
+  provider: npm
+  email: yadickson@gmail.com
+  api_key:
+    secure: KwPyI2jlsDuU8WM05iVF9JC3evJHa9p0MVv5HMl2cowgRlHfmqxw2SXcoUrrxKD3X4VXFsvWmH4msqlyE82t5zdXihWdD86kLeJfQTvJPmztoBVjDwCmcZwzbDvhgPIYVa0llDxdjuUuWP0XNwmHBspPkZn1qv6O/1W3GjlGQ8pajYjodjRRDHtsUCYXr75scEgV9hWnJeVreeueMB0zqGD60jJ0Rmoa1041Wagl6AgvRin9xiiVBb4zxY8pcKHVhS2emRxtColpPLpv0VKYw8vh+zsPu9QYq02CqR3F6v/tSUc173d83T8lYH/Y3PelMuC9btv3n5GN+Xgj9c2PWowJGPoLYP3kIwPpAciet3/CclZeQOS4vTUqQDFJQCgGZBwd16H3DXtUTFp1WB06U4dTzN5ND1k/Pah2XO0bQODaPIWs8XqDHsR7ICIUiNtyo/dQgKQajU8AjgRfDkbyRcsaomgNHGMChmgmJl+O1OWF0hSNq34oJON5arNtxpOojKBC8+2XKbW1uqPbWT+xIfn3JJlWMDq7OhJp6nCVra5aPHl7JV9t+7rhBNEm5IbKPUugptRi2GdNrJwFX31FBF7MP4GphY+c+4s8hCbhBhzWVjBNjH8u8ix43V7oFue6PYGxZAKYigVByyyaLG7tPnJuygq2/egIRf3XDupLW+c=
+  on:
+    tags: true
