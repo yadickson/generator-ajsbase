@@ -3,9 +3,6 @@
 
 [![TravisCI Status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
-[![dependencies][dependencies-image]][dependencies-url]
-[![dev-dependencies][dev-dependencies-image]][dev-dependencies-url]
-[![Known Vulnerabilities][vulnerabilities-image]][vulnerabilities-url]
 [![npm version][npm-image]][npm-url]
 
 ## Installation
