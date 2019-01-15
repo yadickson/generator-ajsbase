@@ -71,5 +71,7 @@ node_modules
 coverage
 package-lock.json
 
+nbproject/
 yar*
 .snyk*
+
