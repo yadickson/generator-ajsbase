@@ -163,14 +163,5 @@ GPL-3.0 © [Yadickson Soto](https://github.com/yadickson)
 [coveralls-image]: https://coveralls.io/repos/github/yadickson/generator-ajsbase/badge.svg
 [coveralls-url]: https://coveralls.io/github/yadickson/generator-ajsbase
 
-[dependencies-image]: https://david-dm.org/yadickson/generator-ajsbase/status.svg
-[dependencies-url]: https://david-dm.org/yadickson/generator-ajsbase?view=list
-
-[dev-dependencies-image]: https://david-dm.org/yadickson/generator-ajsbase/dev-status.svg
-[dev-dependencies-url]: https://david-dm.org/yadickson/generator-ajsbase?type=dev&view=list
-
-[vulnerabilities-image]: https://snyk.io/package/npm/generator-ajsbase/badge.svg
-[vulnerabilities-url]: https://snyk.io/package/npm/generator-ajsbase
-
 [npm-image]: https://badge.fury.io/js/generator-ajsbase.svg
 [npm-url]: https://badge.fury.io/js/generator-ajsbase
