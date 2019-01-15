@@ -16,7 +16,7 @@ describe('generator-ajsbase:factory', () => {
         });
 
         it('should factory file contain name', () => {
-            assert.fileContent('services/numeric_factory.js', ".factory('numeric',");
+            assert.fileContent('services/numeric_factory.js', ".factory('numericFactory',");
         });
 
         it('should factory test file', () => {

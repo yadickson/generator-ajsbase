@@ -15,7 +15,7 @@ describe('generator-ajsbase:service', () => {
         });
 
         it('should service file contain name', () => {
-            assert.fileContent('services/excel_service.js', ".service('excel',");
+            assert.fileContent('services/excel_service.js', ".service('excelService',");
         });
 
         it('should service test file', () => {

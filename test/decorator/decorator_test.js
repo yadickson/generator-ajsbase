@@ -16,7 +16,7 @@ describe('generator-ajsbase:decorator', () => {
         });
 
         it('should decorator file contain name', () => {
-            assert.fileContent('decorators/numeric_decorator.js', ".decorator('numeric',");
+            assert.fileContent('decorators/numeric_decorator.js', ".decorator('numericService',");
         });
 
         it('should decorator test file', () => {

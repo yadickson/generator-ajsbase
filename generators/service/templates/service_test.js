@@ -9,16 +9,16 @@
 
               var <%= name %>;
               // Initialize the service
-              beforeEach(inject(function(_<%= varname %>_) {
-                  <%= name %> = _<%= varname %>_;
+              beforeEach(inject(function(_<%= name %>_) {
+                  <%= name %> = _<%= name %>_;
               }));
 
               it('Check service <%= varname %>', function() {
                   expect(!!<%= name %>).to.be.true;
               });
 
-              it('Check <%= varname %>.name', function() {
-                  expect(<%= name %>.name).to.be.equal('<%= name %>');
+              it('Check <%= name %>.name', function() {
+                  expect(<%= name %>.name).to.be.equal('<%= varname %>');
               });
           });
       });

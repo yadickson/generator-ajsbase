@@ -3,7 +3,7 @@
 
     /**
      * @ngdoc service
-     * @name <%= modulename %>.service:<%= varname %>
+     * @name <%= modulename %>.service:<%= name %>
      *
      * @description
      * Description of the service <%= varname %>
@@ -18,18 +18,18 @@
            <file name="script.js">
                angular
                    .module('<%= modulename %>')
-                   .controller('SampleCtrl', ['<%= varname %>', function (<%= varname %>) {
-                        this.value = 'Hello service ' + <%= varname %>.name;
+                   .controller('SampleCtrl', ['<%= name %>', function (<%= name %>) {
+                        this.value = 'Hello service ' + <%= name %>.name;
                    }]);
            </file>
        </example>
      */
     angular
         .module('<%= modulename %>')
-        .service('<%= varname %>', [function() {
+        .service('<%= name %>', [function() {
             // AngularJS will instantiate a singleton by calling "new" on this function
             var vm = this;
-            vm.name = '<%= name %>';
+            vm.name = '<%= varname %>';
         }]);
 
 })();

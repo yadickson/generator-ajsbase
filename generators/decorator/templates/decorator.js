@@ -13,7 +13,7 @@
     angular
         .module('<%= modulename %>')
         .config(['$provide', function($provide) {
-            $provide.decorator('<%= varname %>', ['$delegate', function($delegate) {
+            $provide.decorator('<%= varname %>Service', ['$delegate', function($delegate) {
                 // decorate the $delegate
 
                 function newHelp() {

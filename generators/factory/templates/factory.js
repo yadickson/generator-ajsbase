@@ -3,7 +3,7 @@
 
     /**
      * @ngdoc service
-     * @name <%= modulename %>.factory:<%= varname %>
+     * @name <%= modulename %>.factory:<%= name %>
      *
      * @description
      * Description of the factory <%= varname %>
@@ -17,26 +17,26 @@
            <file name="script.js">
                angular
                    .module('<%= modulename %>')
-                   .controller('SampleCtrl', ['<%= varname %>', function (<%= varname %>) {
+                   .controller('SampleCtrl', ['<%= name %>', function (<%= name %>) {
                         var vm = this;
-                        vm.value = 'Hello factory ' + <%= varname %>.someMethod();
+                        vm.value = 'Hello factory ' + <%= name %>.someMethod();
                    }]);
            </file>
        </example>
      */
     angular
         .module('<%= modulename %>')
-        .factory('<%= varname %>', [function() {
+        .factory('<%= name %>', [function() {
             // Service logic
             // ...
 
             var vm = this;
-            vm.name = '<%= name %>';
+            vm.name = '<%= varname %>';
 
             // Public API here
             return {
                 someMethod: function() {
-                    return name;
+                    return vm.name;
                 }
             };
         }]);

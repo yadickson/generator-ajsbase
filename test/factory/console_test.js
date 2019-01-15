@@ -15,7 +15,7 @@ describe('generator-ajsbase:factory', () => {
         });
 
         it('should factory file contain name', () => {
-            assert.fileContent('services/excel_factory.js', ".factory('excel',");
+            assert.fileContent('services/excel_factory.js', ".factory('excelFactory',");
         });
 
         it('should factory test file', () => {

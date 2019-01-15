@@ -15,7 +15,7 @@ describe('generator-ajsbase:service', () => {
         });
 
         it('should service file contain name', () => {
-            assert.fileContent('services/none_service.js', ".service('none',");
+            assert.fileContent('services/none_service.js', ".service('noneService',");
         });
 
         it('should service test file', () => {

@@ -15,7 +15,7 @@ describe('generator-ajsbase:decorator', () => {
         });
 
         it('should decorator file contain name', () => {
-            assert.fileContent('decorators/excel_decorator.js', ".decorator('excel',");
+            assert.fileContent('decorators/excel_decorator.js', ".decorator('excelService',");
         });
 
         it('should decorator test file', () => {
